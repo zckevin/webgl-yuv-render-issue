@@ -8,7 +8,11 @@ var canvas = document.getElementById(canvasId);
 if (!canvas) {
     throw new Error("No Canvas with id " + canvasId + "!");
 }
-const yuv = YUVCanvas.attach(canvas);
+
+// force YUVCanvas using WebGLFrameSink instead of SoftwareFrameSink which is 2D canvas
+const yuv = YUVCanvas.attach(canvas, {
+    webGL: true,
+});
 
 const format = YUVBuffer.format({
     width: yuvFile.width,
