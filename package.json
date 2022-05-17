@@ -1,0 +1,19 @@
+{
+  "name": "yuv-canvas-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "serve": "parcel ./index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yuv-buffer": "^1.0.0",
+    "yuv-canvas": "^1.2.11"
+  },
+  "devDependencies": {
+    "@parcel/optimizer-data-url": "2.5.0"
+  }
+}

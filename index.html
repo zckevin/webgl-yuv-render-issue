@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        div {
+            margin-top: 20px;
+        }
+    </style>
+
+    <script type="module" src="./yuv-canvas.js"></script>
+    <script type="module" src="./wasm-video-player.js"></script>
+</head>
+
+<body>
+    <div>
+        <span>Good: YUV-canvas</span>
+        <canvas id="YUVCanvas"></canvas>
+    </div>
+    <div>
+        <span>Bad: WasmVideoPlayer WebGL</span>
+        <canvas id="WasmVideoPlayer"></canvas>
+    </div>
+</body>
+
+</html>
