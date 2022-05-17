@@ -21,7 +21,6 @@ Texture.prototype.fill = function (width, height, data) {
     var gl = this.gl;
     gl.bindTexture(gl.TEXTURE_2D, this.texture);
     gl.texImage2D(gl.TEXTURE_2D, 0, gl.LUMINANCE, width, height, 0, gl.LUMINANCE, gl.UNSIGNED_BYTE, data);
-    console.log("gl.texImage2D: ", data.length)
 };
 
 export default function WebGLPlayer(canvas, options) {

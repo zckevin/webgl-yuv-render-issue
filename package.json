@@ -1,5 +1,5 @@
 {
-  "name": "yuv-canvas-demo",
+  "name": "webgl-yuv-render-issue",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
